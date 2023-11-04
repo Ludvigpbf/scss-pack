@@ -1,13 +1,12 @@
 // Positioning
 // Flex Column Justify Content
 
-@mixin flex-container( $flex-direction: column, $justify-content: center, $align-items: center) {
+@mixin fc( $flex-direction: column, $justify-content: center, $align-items: center) {
     display: flex;
     flex-direction: $flex-direction;
     justify-content: $justify-content;
     align-items: $align-items;
   }
-  
 
 /*
 $fc-jc-c: (
@@ -91,7 +90,12 @@ $fc-ai-s: (
 
 
 // Flex Row Justify
-
+@mixin fr( $flex-direction: row, $justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
 $fr-jc: (
     display: flex,
     flex-direction: row,
