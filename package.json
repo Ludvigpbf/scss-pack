@@ -1,0 +1,8 @@
+{
+  "name": "scss-pack",
+  "version": "1.0.0",
+  "description": "Custom SCSS package for my projects",
+  "author": "Ludvig Flyckt",
+  "main": "output.css",
+  "license": "MIT"
+}
