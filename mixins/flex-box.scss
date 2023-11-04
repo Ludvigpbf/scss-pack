@@ -1,6 +1,15 @@
 // Positioning
 // Flex Column Justify Content
 
+@mixin flex-container( $flex-direction: column, $justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+  
+
+/*
 $fc-jc-c: (
     display: flex,
     flex-direction: column,
@@ -42,7 +51,7 @@ $fc-jc-se: (
     justify-content: space-evenly,
     align-items: center
 );
-
+*/
 // Flex Column Align Items
 
 $fc-ai-c: (
