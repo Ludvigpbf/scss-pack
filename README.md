@@ -32,3 +32,23 @@ p(
 font-size: $p;
 )
 }
+
+
+
+@mixin desktop($width) {
+@if($width){
+@media screen and (min-width: $width) {
+        @content;
+    }
+}
+@else{
+    @media screen and (min-width: 800px) {
+        @content;
+    }}
+}
+
+@mixin phone-landscape {
+    @media screen and (max-width: 770px) and (orientation: landscape) {
+        @content;
+    }
+}
