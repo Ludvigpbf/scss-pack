@@ -1,14 +1,5 @@
-// Positioning
-// Flex Column Justify Content
+// Flex Row Justify Content
 
-@mixin fc( $flex-direction: column, $justify-content: center, $align-items: center) {
-    display: flex;
-    flex-direction: $flex-direction;
-    justify-content: $justify-content;
-    align-items: $align-items;
-  }
-
-/*
 $fc-jc-c: (
     display: flex,
     flex-direction: column,
@@ -50,7 +41,7 @@ $fc-jc-se: (
     justify-content: space-evenly,
     align-items: center
 );
-*/
+
 // Flex Column Align Items
 
 $fc-ai-c: (
@@ -86,54 +77,4 @@ $fc-ai-s: (
     flex-direction: column,
     justify-content: center,
     align-items: stretch
-);
-
-
-// Flex Row Justify
-@mixin fr( $flex-direction: row, $justify-content: center, $align-items: center) {
-    display: flex;
-    flex-direction: $flex-direction;
-    justify-content: $justify-content;
-    align-items: $align-items;
-  }
-$fr-jc: (
-    display: flex,
-    flex-direction: row,
-    justify-content: center,
-    align-items: center
-);
-
-$fr-jsb: (
-    display: flex,
-    flex-direction: row,
-    justify-content: space-between,
-    align-items: center
-);
-
-$fr-js: (
-    display: flex,
-    flex-direction: row,
-    justify-content: flex-start,
-    align-items: center
-);
-
-$fr-je: (
-    display: flex,
-    flex-direction: row,
-    justify-content: flex-end,
-    align-items: center
-);
-
-$fr-jsa: (
-    display: flex,
-    flex-direction: row,
-    justify-content: space-around,
-    align-items: center
-);
-
-$fr-jse: (
-    display: flex,
-    flex-direction: row,
-    justify-content: space-evenly,
-    align-items: center
 );

@@ -1,8 +1,25 @@
 {
-  "name": "scss-pack",
+  "name": "@flyckt-coding/scss-pack",
   "version": "1.0.0",
-  "description": "Custom SCSS package for my projects",
+  "description": "A scss pack with usefull variables and mixins",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ludvigpbf/scss-pack.git"
+  },
+  "keywords": [
+    "scss",
+    "variables",
+    "mixins",
+    "style"
+  ],
   "author": "Ludvig Flyckt",
-  "main": "output.css",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ludvigpbf/scss-pack/issues"
+  },
+  "homepage": "https://github.com/Ludvigpbf/scss-pack#readme"
 }
