@@ -25,7 +25,7 @@ align-items: $align-items;
   $display: flex,
   $flex-direction: column,
   $justify-content: center,
-  $align-items: center, // Added align-items
+  $align-items: center,
   $width: 40rem,
   $padding: 2rem,
   $margin: 1rem,
@@ -34,7 +34,7 @@ align-items: $align-items;
   $gradient: linear-gradient,
   $bgColorStart: #3A0CA3,
   $bgColorEnd: #7209B7,
-  $background-color: null // Added background-color prop with a default value of null
+  $background-color: null
 ) {
   display: $display;
   flex-direction: $flex-direction;
@@ -46,11 +46,10 @@ align-items: $align-items;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
-  // Check if a background color is provided, use it if available
+
   @if $background-color != null {
     background-color: $background-color;
   } @else {
-    // If no background color is provided, use the gradient
     background-image: $gradient(140deg, $bgColorStart, $bgColorEnd);
   }
 
