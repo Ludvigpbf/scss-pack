@@ -20,8 +20,9 @@
 
 @mixin desktop($width) { 
  @if($width)
-  { @media screen and (min-width: $width 
-   { @content; } } 
+  { @media screen and (min-width: $width) 
+   { @content; }  
+ }
  @else
   { @media screen and (min-width: 800px) 
    { @content; }
