@@ -9,6 +9,20 @@
  } 
 }
 
+
+// FIX !!!!
+@mixin phone($width)  { 
+   @if($width)
+    { @media screen and (max-width: $width) and (orientation: landscape) 
+      { @content; } 
+    }
+  @else
+    { @media screen and (max-width: 770px) and (orientation: landscape) 
+      { @content; } }
+  }
+}
+
+
 @mixin phone-landscape($width)  { 
    @if($width)
     { @media screen and (max-width: $width) and (orientation: landscape) 
@@ -19,4 +33,27 @@
       { @content; } }
   }
 }
-  
+
+// FIX !!!!
+@mixin tablet($width)  { 
+   @if($width)
+    { @media screen and (max-width: $width) and (orientation: landscape) 
+      { @content; } 
+    }
+  @else
+    { @media screen and (max-width: 770px) and (orientation: landscape) 
+      { @content; } }
+  }
+}
+
+// FIX !!!!
+@mixin tablet-landscape($width)  { 
+   @if($width)
+    { @media screen and (max-width: $width) and (orientation: landscape) 
+      { @content; } 
+    }
+  @else
+    { @media screen and (max-width: 770px) and (orientation: landscape) 
+      { @content; } }
+  }
+}
