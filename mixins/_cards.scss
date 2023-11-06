@@ -37,3 +37,53 @@
   @include tablet();
   @include landscape();
 }
+
+
+
+@mixin regular-card(
+  $display: flex,
+  $flex-direction: column,
+  $justify-content: center,
+  $align-items: center,
+  $width: 40rem,
+  $padding: 2rem,
+  $margin: 1rem,
+  $border-radius: 1rem,
+  $box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.229),
+  $gradient: linear-gradient,
+  $bgColorStart: #3A0CA3,
+  $bgColorEnd: #7209B7,
+  $background-color: null
+) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  width: $width;
+  padding: $padding;
+  margin: $margin;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  @if $background-color != null {
+    background-color: $background-color;
+  } @else {
+    background-image: $gradient(140deg, $bgColorStart, $bgColorEnd);
+  }
+
+  @include desktop();
+  @include tablet();
+  @include landscape();
+}
+
+@mixin small-card {
+  @include regular-card($width: 20rem, $padding: 1rem, $margin: 0.5rem, $border-radius: 0.5rem);
+}
+
+@mixin big-card {
+  @include regular-card($width: 60rem, $padding: 3rem, $margin: 2rem, $border-radius: 2rem);
+}
+
+@mixin small-tall-card {
+  @include regular-card($width: 20rem, $height: 40rem, $padding: 1rem, $margin: 0.5rem, $border-radius: 0.5rem);
+}
