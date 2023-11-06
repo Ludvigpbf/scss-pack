@@ -23,3 +23,162 @@ $backgroundEnd);
     color: $textColor;
   }
 }
+
+
+
+// Primary Button
+@mixin primary-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+// Secondary Button
+@mixin secondary-button {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  &:hover {
+    background-color: #495057;
+  }
+}
+
+// Success Button
+@mixin success-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  &:hover {
+    background-color: #218838;
+  }
+}
+
+// Danger Button
+@mixin danger-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  &:hover {
+    background-color: #c82333;
+  }
+}
+
+// Warning Button
+@mixin warning-button {
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+  &:hover {
+    background-color: #e0a800;
+  }
+}
+
+// Info Button
+@mixin info-button {
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+  &:hover {
+    background-color: #138496;
+  }
+}
+
+// Light Button
+@mixin light-button {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: none;
+  &:hover {
+    background-color: #e2e6ea;
+  }
+}
+
+// Dark Button
+@mixin dark-button {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  &:hover {
+    background-color: #1d2124;
+  }
+}
+
+// Large Button
+@mixin large-button {
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+}
+
+// Small Button
+@mixin small-button {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+// Rounded Button
+@mixin rounded-button {
+  border-radius: 2rem;
+}
+
+// Outlined Button
+@mixin outlined-button {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  &:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+}
+
+// Pill Button
+@mixin pill-button {
+  border-radius: 50rem;
+}
+
+// Icon Button
+@mixin icon-button {
+  padding: 0.5rem;
+  min-width: 2.5rem;
+}
+
+// Text Button
+@mixin text-button {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Disabled Button
+@mixin disabled-button {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+// Link Button
+@mixin link-button {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Inverted Button
+@mixin inverted-button {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  &:hover {
+    background-color: transparent;
+  }
+}
