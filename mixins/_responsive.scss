@@ -1,59 +1,60 @@
+
+
+
+@mixin phone($width)  { 
+   @if($width)
+    { @media screen and (max-width: $width)
+      { @content; } 
+    }
+  @else
+    { @media screen and (max-width: 599px)
+      { @content; } }
+  }
+}
+
+
+@mixin phone-landscape($min-width, $max-width)  { 
+   @if($width)
+    { @media screen and (min-width: $min-width, max-width: $max-width) and (orientation: landscape) 
+      { @content; } 
+    }
+  @else
+    { @media screen and (min-width: 600px, max-width: 770px) and (orientation: landscape) 
+      { @content; } }
+  }
+}
+
+
+@mixin tablet($min-width, $max-width) { 
+   @if($width)
+    { @media screen and (min-width: $min-width, max-width: $max-width)
+      { @content; } 
+    }
+  @else
+    { @media screen and (min-width: 768px, max-width: 991px)
+      { @content; } }
+  }
+}
+
+
+@mixin tablet-landscape($min-width, $max-width)  { 
+   @if($width)
+    { @media screen and (min-width: $min-width, max-width: $max-width) and (orientation: landscape) 
+      { @content; } 
+    }
+  @else
+    { @media screen and (min-width: 992px, max-width: 1199px) and (orientation: landscape) 
+      { @content; } }
+  }
+}
+
 @mixin desktop($width) { 
  @if($width)
-  { @media screen and (min-width: $width) 
+  { @media screen and (max-width: $width) 
    { @content; }  
  }
  @else
-  { @media screen and (min-width: 800px) 
+  { @media screen and (max-width: 1200px) 
    { @content; }
  } 
-}
-
-
-// FIX !!!!
-@mixin phone($width)  { 
-   @if($width)
-    { @media screen and (max-width: $width) and (orientation: landscape) 
-      { @content; } 
-    }
-  @else
-    { @media screen and (max-width: 770px) and (orientation: landscape) 
-      { @content; } }
-  }
-}
-
-
-@mixin phone-landscape($width)  { 
-   @if($width)
-    { @media screen and (max-width: $width) and (orientation: landscape) 
-      { @content; } 
-    }
-  @else
-    { @media screen and (max-width: 770px) and (orientation: landscape) 
-      { @content; } }
-  }
-}
-
-// FIX !!!!
-@mixin tablet($width)  { 
-   @if($width)
-    { @media screen and (max-width: $width) and (orientation: landscape) 
-      { @content; } 
-    }
-  @else
-    { @media screen and (max-width: 770px) and (orientation: landscape) 
-      { @content; } }
-  }
-}
-
-// FIX !!!!
-@mixin tablet-landscape($width)  { 
-   @if($width)
-    { @media screen and (max-width: $width) and (orientation: landscape) 
-      { @content; } 
-    }
-  @else
-    { @media screen and (max-width: 770px) and (orientation: landscape) 
-      { @content; } }
-  }
 }
