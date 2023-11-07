@@ -3,7 +3,9 @@
     $gradient: linear-gradient,
     $deg: 140deg,
     $backgroundStart: orange,
-    $backgroundEnd: red) {
+    $backgroundEnd: red,
+    $f-size: $f-10xl)
+    {
 
     font-size: $f-size;
 
