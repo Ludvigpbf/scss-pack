@@ -1,0 +1,54 @@
+# scss-pack
+a scss pack with mixins, variables and animations
+
+
+Featured varaiables:
+
+ - font sizes in:
+   - px(2px-54px)
+   - em(2px-54px)
+   - rem(2px-54px)
+   - vw(2px-54px)
+   - vh(2px-54px)
+ - flex box variants
+ - responsive breakpoints
+   - mobile()
+   - mobile-landscape()
+   - tablet()
+   - tablet-landscape()
+   - desktop()
+ - colors
+ - 
+
+
+mixin regular($h1: $f-5xl, $h2: $f-3xl, $p: $f-md){
+ h1(
+  font-size: $h1;
+ )
+ h2(
+  font-size: $h2;
+ )
+ p(
+  font-size: $p;
+ )
+}
+
+
+
+@mixin desktop($width) {
+@if($width){
+@media screen and (min-width: $width) {
+        @content;
+    }
+}
+@else{
+    @media screen and (min-width: 800px) {
+        @content;
+    }}
+}
+
+@mixin phone-landscape {
+    @media screen and (max-width: 770px) and (orientation: landscape) {
+        @content;
+    }
+}
