@@ -1,6 +1,6 @@
 {
   "name": "@flyckt-coding/scss-pack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A scss pack with usefull variables and mixins",
   "main": "index.scss",
   "scripts": {
