@@ -1,6 +1,6 @@
 # scss-pack
 
-a scss pack with mixins, variables and animations
+This is a scss package with mixins, variables, classes and animations to help you streamline your work. 
 
 # Installation
 
@@ -9,7 +9,7 @@ a scss pack with mixins, variables and animations
 3. To use classes on elements, import it to your react component: import '@flyckt-coding/scss-pack';
 4. Start using the features
 
-Featured varaiables:
+Featured:
 
 - Font sizes in:
   - px(2px-54px)
@@ -27,22 +27,5 @@ Featured varaiables:
 - Colors
 - Mixins
 
-mixin regular($h1: $f-5xl, $h2: $f-3xl, $p: $f-md){
-h1(
-font-size: $h1;
-)
-h2(
-font-size: $h2;
-)
-p(
-font-size: $p;
-)
-}
 
-@mixin desktop($width) {
-@if($width){
-@media screen and (min-width: $width) {
-@content;
-}
-}
-@
+This package is under construction and is continuously being updated, as is the documentation. If you have any questions or suggestions, please contact us at contact@flycktcoding.com.
