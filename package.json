@@ -2,7 +2,7 @@
   "name": "@flyckt-coding/scss-pack",
   "version": "1.0.1",
   "description": "A scss pack with usefull variables and mixins",
-  "main": "index.css",
+  "main": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
