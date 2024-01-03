@@ -11,7 +11,10 @@ This is a scss package with mixins, variables, classes and animations to help yo
 
 Featured:
 
-- classes
+- Classes
+  - Button classes
+  - Card classes
+  - 
 
 - Font sizes in:
   - px(2px-54px)

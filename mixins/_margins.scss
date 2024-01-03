@@ -1,0 +1,4 @@
+@mixin margin-x($margin-x: 1rem) {
+    margin-left: $margin-x;
+    margin-right: $margin-x;
+}
