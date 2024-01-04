@@ -1,5 +1,7 @@
-// Wide card
-
+// Wide card mixin
+// This mixin creates a wide card with customizable properties such as display, flex-direction, justify-content, align-items, width, padding, margin, border-radius, box-shadow, background color or gradient.
+// If a background color is provided, it will be used. Otherwise, a gradient will be applied using the specified start and end colors.
+// It also includes media queries for desktop, tablet, and landscape views.
 @mixin card-wide(
   $display: flex,
   $flex-direction: column,
@@ -15,6 +17,7 @@
   $bgColorEnd: #7209B7,
   $background-color: null
 ) {
+  // CSS properties for the wide card
   display: $display;
   flex-direction: $flex-direction;
   justify-content: $justify-content;
@@ -24,22 +27,24 @@
   margin: $margin;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
-  
 
-
+  // Apply background color or gradient
   @if $background-color != null {
     background-color: $background-color;
   } @else {
     background-image: $gradient($deg, $bgColorStart, $bgColorEnd);
   }
 
-  @include desktop();
+  // Media queries for different views
+ /*  @include desktop();
   @include tablet();
-  @include landscape();
+  @include landscape(); */
 }
 
-
-
+// Regular card mixin
+// This mixin creates a regular card with customizable properties such as display, flex-direction, justify-content, align-items, width, padding, margin, border-radius, box-shadow, background color or gradient.
+// If a background color is provided, it will be used. Otherwise, a gradient will be applied using the specified start and end colors.
+// It does not include media queries.
 @mixin regular-card(
   $display: flex,
   $flex-direction: column,
@@ -55,6 +60,7 @@
   $bgColorEnd: #7209B7,
   $background-color: null
 ) {
+  // CSS properties for the regular card
   display: $display;
   flex-direction: $flex-direction;
   justify-content: $justify-content;
@@ -65,25 +71,28 @@
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
+  // Apply background color or gradient
   @if $background-color != null {
     background-color: $background-color;
   } @else {
     background-image: $gradient(140deg, $bgColorStart, $bgColorEnd);
   }
-
-  /* @include desktop();
-  @include tablet();
-  @include landscape(); */
 }
 
+// Small card mixin
+// This mixin creates a small card by extending the regular card mixin with specific width, padding, margin, and border-radius values.
 @mixin small-card {
   @include regular-card($width: 20rem, $padding: 1rem, $margin: 0.5rem, $border-radius: 0.5rem);
 }
 
+// Big card mixin
+// This mixin creates a big card by extending the regular card mixin with specific width, padding, margin, and border-radius values.
 @mixin big-card {
   @include regular-card($width: 60rem, $padding: 3rem, $margin: 2rem, $border-radius: 2rem);
 }
 
+// Small tall card mixin
+// This mixin creates a small tall card by extending the regular card mixin with specific width, height, padding, margin, and border-radius values.
 @mixin small-tall-card {
   @include regular-card($width: 20rem, $height: 40rem, $padding: 1rem, $margin: 0.5rem, $border-radius: 0.5rem);
 }

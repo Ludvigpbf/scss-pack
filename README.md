@@ -1,6 +1,6 @@
 # scss-pack
 
-This is a scss package with mixins, variables, classes and animations to help you streamline your work. 
+This is a scss package with mixins, variables, classes and animations to help you streamline your work.
 
 # Installation
 
@@ -12,9 +12,9 @@ This is a scss package with mixins, variables, classes and animations to help yo
 Featured:
 
 - Classes
+
   - Button classes
   - Card classes
-  - 
 
 - Font sizes in:
   - px(2px-54px)
@@ -30,7 +30,29 @@ Featured:
   - tablet-landscape()
   - desktop()
 - Colors
-- Mixins
 
+
+
+- animations
+  -
+- classes
+  - \_buttons-classes.scss
+  - \_card-classes.scss
+  - \_index-classes.scss
+- mixins
+  - \_buttons.scss
+  - \_flex-box.scss
+  - \_flex-row.scss
+  - \_margins.scss
+  - \_sizes.scss
+  - \_cards.scss
+  - \_flex-column.scss
+  - \_index-mixins.scss
+  - \_responsive.scss
+  - \_text.scss
+- variables
+  - \_fonts.scss
+  - \_index-variables.scss
+  - \_sizes.scss
 
 This package is under construction and is continuously being updated, as is the documentation. If you have any questions or suggestions, please contact us at contact@flycktcoding.com.

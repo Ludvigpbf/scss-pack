@@ -1,9 +1,13 @@
+// Base card styles
 .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 16px;
-    background-color: #fff;
+    background-color: #f0f0f0;
     color: #333;
     font-size: 16px;
     line-height: 1.5;
@@ -11,50 +15,60 @@
     margin-bottom: 16px;
 }
 
+// Primary card variant
 .card-primary {
     background-color: #007bff;
     color: #fff;
 }
 
+// Secondary card variant
 .card-secondary {
     background-color: #6c757d;
     color: #fff;
 }
 
+// Success card variant
 .card-success {
     background-color: #28a745;
     color: #fff;
 }
 
+// Danger card variant
 .card-danger {
     background-color: #dc3545;
     color: #fff;
 }
 
+// Warning card variant
 .card-warning {
     background-color: #ffc107;
     color: #333;
 }
 
+// Info card variant
 .card-info {
     background-color: #17a2b8;
     color: #fff;
 }
 
+// Light card variant
 .card-light {
     background-color: #f8f9fa;
     color: #333;
 }
 
+// Dark card variant
 .card-dark {
     background-color: #343a40;
     color: #fff;
 }
 
+// Card hover effect
 .card-hover {
     transition: box-shadow 0.3s ease-in-out;
 }
 
+// Card hover effect on hover
 .card-hover:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
