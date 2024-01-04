@@ -2,9 +2,10 @@
   "name": "@flyckt-coding/scss-pack",
   "version": "1.0.3",
   "description": "A scss pack with usefull variables and mixins",
-  "main": "index.scss",
+  "main": "index.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Ludvigpbf/scss-pack/issues"
   },
-  "homepage": "https://github.com/Ludvigpbf/scss-pack#readme"
+  "homepage": "https://github.com/Ludvigpbf/scss-pack#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
