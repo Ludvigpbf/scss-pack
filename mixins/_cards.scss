@@ -71,9 +71,9 @@
     background-image: $gradient(140deg, $bgColorStart, $bgColorEnd);
   }
 
-  @include desktop();
+  /* @include desktop();
   @include tablet();
-  @include landscape();
+  @include landscape(); */
 }
 
 @mixin small-card {

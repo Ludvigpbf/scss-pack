@@ -1,24 +1,34 @@
-@mixin colored-text($backgroundSolid: #3A0CA3,
-    $textColor: #ffffff,
-    $gradient: linear-gradient,
-    $deg: 140deg,
-    $backgroundStart: orange,
-    $backgroundEnd: red,
-    $f-size: $f-10xl)
-    {
+/* @mixin colored-text(
+  $backgroundSolid: #3a0ca3,
+  $textColor: #ffffff,
+  $gradient: "linear-gradient",
+  $deg: 140deg,
+  $backgroundStart: orange,
+  $backgroundEnd: red,
+  $f-size: $f-10xl
+) {
+  font-size: $f-size;
 
-    font-size: $f-size;
+  @if type-of($backgroundSolid) == 'color' {
+    background: $backgroundSolid;
+    color: $textColor;
+  } @else {
+    background: $gradient($deg, $backgroundStart, $backgroundEnd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+} */
 
-    @if type-of($background)==color {
-        background: $background;
-        color: $textColor;
-    }
-
-    @else {
-        background: $gradient($deg,
-                $backgroundStart,
-                $backgroundEnd);
-        -webkit-background-clip: text;
-        color: $textColor;
-    }
+@mixin colored-text(
+  $gradient: linear-gradient,
+  $deg: 140deg,
+  $backgroundStart: orange,
+  $backgroundEnd: red,
+  $f-size: $f-10xl
+) {
+  font-size: $f-size;
+  background: $gradient($deg, $backgroundStart, $backgroundEnd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
