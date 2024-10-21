@@ -55,4 +55,4 @@ Featured:
   - \_index-variables.scss
   - \_sizes.scss
 
-This package is under construction and is continuously being updated, as is the documentation. If you have any questions or suggestions, please contact us at contact@flycktcoding.com.
+This package is under construction and is continuously being updated, as is the documentation. If you have any questions or suggestions, please contact me at contact@flycktcoding.com.
